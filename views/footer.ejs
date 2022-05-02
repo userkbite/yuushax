@@ -1,0 +1,15 @@
+    <script>
+        var i = setInterval(function () {
+
+            clearInterval(i);
+        
+            // O código desejado é apenas isto:
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("header").style.display = "block";
+            document.getElementById("app").style.display = "block";
+            document.getElementById("footer").style.display = "block";
+
+        }, 1500);
+    </script>
+</body>
+</html>

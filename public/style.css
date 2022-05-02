@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Horatiob;
+    src: url(/static/HORATIOB.ttf);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2e8f0;
+}
+
+#loading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 2px solid #afafaf; /* Light grey */
+    border-top: 2px solid #424242; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin .5s linear infinite;
+    margin-right: .5rem;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#header {
+    display: none;
+    font-family: 'Horatiob', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#header .logo {
+    font-size: 4rem;
+    color: #38A169;
+}
+
+#app {
+    display: none;
+    /* width: 100%; */
+    /* padding: 2rem 16rem; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #424242;
+}
+
+#app h4 {
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+#app span {
+    display: block;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#app span a {
+    color: #7738a1;
+}
+
+form .form-group {
+    margin-top: .6rem;
+}
+
+form .form-group label {
+    display: block;
+}
+
+form .form-group input {
+    width: 280px;
+    border: none;
+    padding: 6px 12px;
+    outline: none;
+}
+
+form .form-group button {
+    width: 280px;
+    background-color: #38A169;
+    padding: 6px 12px;
+    border: none;
+    color: #FFF;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#footer {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    font-size: .9rem;
+}
