@@ -4,15 +4,16 @@
     </div>
 
     <header id="header">
-        <div class="logo-home">yuushax</div>
-        <a href="/<%= locals.username %>">
+        <a href="/">
+            <div class="logo-home">yuushax</div>
+        </a>
+        <a href="/<%= userAbout.username %>">
             <img src="/static/usericon.svg" alt="" class="usericon">
         </a>
     </header>
     
     <div id="app">
-        <h4>Seja bem-vindo(a) <%= locals.username %> </h4>
-        <a href="/route/logout">Sair</a>
+        <h4>Seguidores de <%= userAbout.username %> </h4>
     </div>
 
 <%- include('footer') -%>

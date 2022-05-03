@@ -3,13 +3,14 @@
         <div class="loader"></div> Carregando...
     </div>
 
-    <header id="header">
-        <div class="logo">yuushax</div>
-    </header>
-
     <div id="app">
+        <div class="logo">yuushax</div>
         <h4>Criar minha conta no Yuushax</h4>
         <form action="/route/register" method="POST">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="username" name="username" id="username>
+            </div>
             <div class="form-group">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email">
@@ -25,5 +26,4 @@
         <span>Já tenho uma conta <a href="/">Login</a></span>
     </div>
 
-    <span id="footer">Desenvolvido por <a href="http://instagram.com/guilhermesilva.py" target="_blank">Guilherme Silva</a></span>
 <%- include('footer') -%>

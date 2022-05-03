@@ -1,0 +1,41 @@
+<%- include('header') -%> 
+    <div id="loading">
+        <div class="loader"></div> Carregando...
+    </div>
+
+    <header id="header">
+        <a href="/">
+            <div class="logo-home">yuushax</div>
+        </a>
+        <a href="/<%= user %>/edit">
+            <img src="/static/usericon.svg" alt="" class="usericon">
+        </a>
+    </header>
+    
+    <div id="app" class="perfil">
+        <% if(locals.userAbout) { %>
+            <div class="container">
+                <img src="/static/usericon.svg" alt="">
+                <div class="img-user">
+                    <div class="top">
+                        <p class="username"><%= userAbout.username %> </p>
+                        <button>Seguir</button>
+                    </div>
+                    <div class="infos">
+                        <a href="#">
+                            <p>0 Publicações</p>
+                        </a>
+                        <a href="/<%= userAbout.username%>/follows">
+                            <p>0 Seguidores</p>
+                        </a>
+                        <a href="#">
+                            <p>A seguir 0</p>
+                        </a>
+                    </div>
+                    <p><%= userAbout.bio %> </p>
+                </div>
+            </div>
+        <% } %> 
+    </div>
+
+<%- include('footer') -%>

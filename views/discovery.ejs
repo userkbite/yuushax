@@ -4,15 +4,18 @@
     </div>
 
     <header id="header">
-        <div class="logo-home">yuushax</div>
-        <a href="/<%= locals.username %>">
+        <a href="/">
+            <div class="logo-home">yuushax</div>
+        </a>
+        <a href="/<%= user %>">
             <img src="/static/usericon.svg" alt="" class="usericon">
         </a>
     </header>
     
     <div id="app">
-        <h4>Seja bem-vindo(a) <%= locals.username %> </h4>
-        <a href="/route/logout">Sair</a>
+        <% users.forEach(i => { %> 
+            <a href="/<%= i.username %> "><%= i.username %> </a>
+        <% }) %> 
     </div>
 
 <%- include('footer') -%>
